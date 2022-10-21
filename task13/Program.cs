@@ -5,7 +5,12 @@
 Console.Clear();
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
-int index = 2;
-int array = number.ToString()[index] - '0';
-Console.WriteLine(array);
-
+if(number > 99)
+{
+    int index = 2;
+    int array = number.ToString()[index] - '0';
+    Console.WriteLine(array);
+}
+else{
+    Console.WriteLine("Третьей цифры нет");
+}
